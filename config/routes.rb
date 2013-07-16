@@ -1,4 +1,6 @@
 Proj1::Application.routes.draw do
+  resources :mocroposts
+
   resources :users
 
 match '/help', to: 'static_pages#help', via: 'get'
